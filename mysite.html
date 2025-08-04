@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M Sneha Reddy | Landing Page</title>
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --secondary: #6366f1;
+      --text-dark: #111827;
+      --text-light: #f9fafb;
+      --bg-light: #f3f4f6;
+      --accent: #14b8a6;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    header {
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      color: var(--text-light);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      background: var(--text-dark);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      padding: 100px 20px;
+      background: url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      background: var(--accent);
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0d9488;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .feature {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 280px;
+    }
+
+    .feature img {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .about {
+      background: white;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .testimonial {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      width: 300px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .testimonial p {
+      font-style: italic;
+    }
+
+    .testimonial h4 {
+      margin-top: 15px;
+      color: var(--secondary);
+    }
+
+    form {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    footer {
+      background: var(--text-dark);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    @media(max-width: 768px) {
+      .features, .testimonials {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h2 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== LOGO & HEADER ===== -->
+  <header>
+    <h1>M Sneha Reddy</h1>
+    <p>Creative Developer & Visionary Thinker</p>
+  </header>
+
+  <!-- ===== NAVIGATION BAR ===== -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <h2>Explore Innovation Like Never Before</h2>
+    <p>Welcome to my world of design, tech, and ambition. I create solutions that inspire and innovate.</p>
+    <button class="btn">Know More</button>
+  </section>
+
+  <!-- ===== FEATURES SECTION ===== -->
+  <section id="features">
+    <h2>My Core Skills</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/50/code.png" alt="Code" />
+        <h3>Web Development</h3>
+        <p>Responsive, creative, and fast-loading websites built with precision.</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/50/design.png" alt="Design" />
+        <h3>UI/UX Design</h3>
+        <p>Modern interfaces and seamless user experience tailored to the audience.</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/50/idea.png" alt="Idea" />
+        <h3>Creative Thinking</h3>
+        <p>Solving problems with innovative ideas and storytelling.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hey there! I’m <strong>M Sneha Reddy</strong>, a passionate developer and creative thinker on a mission to bring unique digital ideas to life. From building user-friendly websites to designing captivating visuals, my goal is to leave an impact wherever I go.</p>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section>
+    <h2>What Others Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>"Sneha's design approach is thoughtful, modern, and user-centric. A pleasure to collaborate with!"</p>
+        <h4>— Client A</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Creative. Smart. Reliable. She delivers every time, beyond expectations."</p>
+        <h4>— Client B</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Let’s work together or just say hello ✨</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    © 2025 M Sneha Reddy — All rights reserved.
+  </footer>
+
+</body>
+</html>
